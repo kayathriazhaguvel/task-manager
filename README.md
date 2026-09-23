@@ -50,9 +50,3 @@ task-manager/
 - The spec's API table lists `POST /api/auth/login` but no way to create a user — a `POST /api/auth/register` endpoint was added so the login flow is actually testable end-to-end. This is called out in `backend/README.md`.
 - MongoDB + Mongoose was used (the spec allowed MongoDB or PostgreSQL).
 - Dashboard summary counts are computed server-side per request rather than a separate endpoint, since the spec's endpoint table didn't list one — it's included in the existing `GET /api/tasks` response.
-
-## Before submitting
-
-- [ ] Double check `.env` files are **not** committed (`.gitignore` already excludes them)
-- [ ] Push to a GitHub repository with both `backend/` and `frontend/`
-- [ ] Confirm the README setup steps work on a clean clone
